@@ -31,6 +31,11 @@ gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 #Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.7', '>= 4.7.1'
+
+# Provides with the ability to validate url (Rails 4). Allow using http, https and schema-less urls, checks domain zones, IP-based hostnames, name space specifications and hostname characters. 提供url 的認證
+gem 'valid_url', '~> 0.0.4'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
