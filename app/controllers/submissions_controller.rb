@@ -1,6 +1,6 @@
 class SubmissionsController < ApplicationController
   before_action :set_submission, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     @submissions = Submission.all
@@ -11,7 +11,7 @@ class SubmissionsController < ApplicationController
   end
 
   def new
-    @submission = Submission.new
+    @submission = current_user.submissions.build
   end
 
   def edit
@@ -19,7 +19,7 @@ class SubmissionsController < ApplicationController
 
 
   def create
-    @submission = Submission.new(submission_params)
+    @submission = current_user.submissions.build(submission_params)
 
     respond_to do |format|
       if @submission.save
