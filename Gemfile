@@ -40,6 +40,7 @@ gem 'inline_svg', '~> 1.7', '>= 1.7.1'
 # gem 'font-awesome-sass', '~> 5.12'
 
 
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -60,6 +61,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Guard is a command line tool to easily handle events on file system modifications.
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
