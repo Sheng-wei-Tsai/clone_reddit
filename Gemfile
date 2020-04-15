@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 # webbit custom gem 
+#Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+
 #Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.7', '>= 4.7.1'
 # Reduces boot times through caching; required in config/boot.rb
