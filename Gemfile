@@ -31,6 +31,11 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# Upload files in your Ruby applications, map them to a range of ORMs, store them on different backends.
+# 在檔案上傳時，掃他排列到 orms 存存在不同的後端裡
+gem 'carrierwave', '~> 2.1'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
