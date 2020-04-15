@@ -34,6 +34,8 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 
 # Provides with the ability to validate url (Rails 4). Allow using http, https and schema-less urls, checks domain zones, IP-based hostnames, name space specifications and hostname characters. 提供url 的認證
 gem 'valid_url', '~> 0.0.4'
+# Get an SVG into your view and then style it with CSS.
+gem 'inline_svg', '~> 1.7', '>= 1.7.1'
 
 
 # Reduces boot times through caching; required in config/boot.rb
